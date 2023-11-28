@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <title>Fetch Offers</title>
+</head>
+<body>
+  <header>
+    <h1>Fetch Offers</h1>
+  </header>
+  
+  <section class="main-content">
+    <p>
+      Fetch provides value to our user base through the rich variety of offers that are active in the app.
+      We want our users to be able to easily seek out offers in the app,
+      so that they get the most out of using the app and our partners get the most out of their relationship with Fetch.
+    </p>
+
+    <form method="post" action="/" class="search-form">  <!-- Change action to "/" -->
+      <label for="user_input">Enter your search query:</label>
+      <input type="text" name="user_input" id="user_input" required>
+      <button type="submit">Search</button>
+    </form>
+
+    {% if result_df %}
+      <h2>Search Results:</h2>
+      <div class="result-container">
+        {{ result_df|safe }}
+      </div>
+    {% endif %}
+  </section>
+</body>
+</html>

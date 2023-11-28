@@ -16,9 +16,9 @@ def index():
             result_df = get_relevant_offers_df(user_input, tfidf_matrix, offers_df)
 
             # Display results
-            return render_template('test.html', result_df=result_df.to_html())
+            return render_template('index.html', result_df=result_df.to_html())
     
-    return render_template('test.html', result_df=None)
+    return render_template('index.html', result_df=None)
 
 if __name__ == '__main__':
     app.run(debug=True)

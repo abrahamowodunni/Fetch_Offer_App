@@ -18,21 +18,17 @@
       so that they get the most out of using the app and our partners get the most out of their relationship with Fetch.
     </p>
 
-    <form method="post" action="/" class="search-form">
+    <form method="post" action="/" class="search-form">  <!-- Change action to "/" -->
       <label for="user_input">Enter your search query:</label>
       <input type="text" name="user_input" id="user_input" required>
       <button type="submit">Search</button>
     </form>
 
     {% if result_df %}
-      {% if result_df['SIMILARITY_SCORE'].eq(0).all() %}
-        <p>No relevant offers found. Try a different search query.</p>
-      {% else %}
-        <h2>Search Results:</h2>
-        <div class="result-container">
-          {{ result_df|safe }}
-        </div>
-      {% endif %}
+      <h2>Search Results:</h2>
+      <div class="result-container">
+        {{ result_df|safe }}
+      </div>
     {% endif %}
   </section>
 </body>

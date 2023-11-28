@@ -4,24 +4,24 @@ The Fetch Offer Search Tool is designed to provide users with a seamless experie
 ### Project Structure
 #### Data:
 
-- offer_retailer.csv: Dataset containing offers, retailers, and brands.
-categories.csv: Dataset mapping product categories.
-brand_category.csv: Dataset mapping brands to categories.
+- '**offer_retailer.csv**': Dataset containing offers, retailers, and brands.
+- '**categories.csv**': Dataset mapping product categories.
+- '**brand_category.csv**': Dataset mapping brands to categories.
 #### Code:
 
-- model.py: Python script containing the NLP model for offer searching.
-app.py: Flask web application for user interaction.
+- '**model.py**': Python script containing the NLP model for offer searching.
+- '**app.py**': Flask web application for user interaction.
 #### Templates:
 
-templates/index.html: HTML template for the user interface.
-- Static:
+- '**templates/index.html**': HTML template for the user interface.
+#### Static:
 
-static/style.css: CSS file for styling the user interface.
+- '**static/style.css**': CSS file for styling the user interface.
 
 ### Data Preprocessing
 #### Handling Missing Data:
 
-- The offer_retailer dataset had missing values in the RETAILER column.
+- The '**offer_retailer**' dataset had missing values in the '**RETAILER**' column.
 - Missing retailer information was imputed using Google searches, selecting the most frequently appearing retailer for each offer.
 #### Text Preprocessing:
 

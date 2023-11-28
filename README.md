@@ -69,5 +69,5 @@ Access the live app on Heroku: [Fetch Offer App](https://fetchofferapp-844f25b2b
 ### Acknowledgments
 This project was developed as part of with the goal of the project was to create a web application that facilitates the search for relevant offers using natural language processing (NLP) techniques. The application allows users to input search queries, and it matches these queries with the most relevant offers from a dataset. The primary objectives included building a user-friendly interface, implementing offer matching using TF-IDF vectorization and cosine similarity, and presenting the top 5 relevant offers to users. The project aimed to simplify the process of discovering and accessing valuable deals for users.
 
-_Authur: Abraham Owodunni_
+_Author: Abraham Owodunni_
 

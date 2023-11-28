@@ -52,13 +52,6 @@ Access the live app on Heroku: [Fetch Offer App](https://fetchofferapp-844f25b2b
 2. Enter your search query in the provided input box.
 3. Click the "Search" button to see the top 5 relevant offers.
 
-### Project Structure
-- Data: Datasets for offers, categories, and brand categories are included.
-
-- Model: Core functionality is implemented in model.py, handling offer matching and result presentation.
-
-- Web App: The web app, built using Flask, is defined in app.py. HTML templates are stored in the templates folder, while CSS styles are in the static folder.
-
 ### Dependencies 
 ###### check requirements.txt
 - Python 3.11.5

@@ -9,7 +9,7 @@ This web application simplifies the process of finding exciting offers by employ
 - Top 5 Offers: The app displays the top 5 relevant offers, making the decision-making process easier for users.
 
 ### Deployment
-Access the live app on Heroku: Fetch Offer App.
+Access the live app on Heroku: [Fetch Offer App](https://fetchofferapp-844f25b2b0ba.herokuapp.com/)!
 
 ### How to Use
 1. Visit the web app.
@@ -23,7 +23,8 @@ Access the live app on Heroku: Fetch Offer App.
 
 - Web App: The web app, built using Flask, is defined in app.py. HTML templates are stored in the templates folder, while CSS styles are in the static folder.
 
-### Dependencies
+### Dependencies 
+###### check requirements.txt
 - Python 3.11.5
 - Flask
 - pandas

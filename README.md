@@ -35,6 +35,15 @@ The Fetch Offer Search Tool is designed to provide users with a seamless experie
 
 - Top 5 Offers: The app displays the top 5 relevant offers, making the decision-making process easier for users.
 
+### Web Application
+#### Flask Application:
+
+- Developed a Flask web application for user interaction.
+- Users can input text, and the tool returns relevant offers with similarity scores.
+#### Styling:
+
+- Styled the user interface using CSS for a clean and user-friendly design.
+
 ### Deployment
 Access the live app on Heroku: [Fetch Offer App](https://fetchofferapp-844f25b2b0ba.herokuapp.com/)!
 

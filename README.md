@@ -1,5 +1,32 @@
 # Fetch Offer Search App
-This web application simplifies the process of finding exciting offers by employing natural language processing (NLP) techniques. Users can easily discover the most relevant deals based on their search queries.
+The Fetch Offer Search Tool is designed to provide users with a seamless experience for intelligently searching for offers within the Fetch app. The tool utilizes Natural Language Processing (NLP) techniques to allow users to search for offers based on categories, brands, or retailers.
+
+### Project Structure
+#### Data:
+
+- offer_retailer.csv: Dataset containing offers, retailers, and brands.
+categories.csv: Dataset mapping product categories.
+brand_category.csv: Dataset mapping brands to categories.
+#### Code:
+
+- model.py: Python script containing the NLP model for offer searching.
+app.py: Flask web application for user interaction.
+#### Templates:
+
+templates/index.html: HTML template for the user interface.
+- Static:
+
+static/style.css: CSS file for styling the user interface.
+
+### Data Preprocessing
+#### Handling Missing Data:
+
+- The offer_retailer dataset had missing values in the RETAILER column.
+- Missing retailer information was imputed using Google searches, selecting the most frequently appearing retailer for each offer.
+#### Text Preprocessing:
+
+- Text data in offers was preprocessed to lowercase and remove punctuation.
+- Brand and retailer information were included in the processed text for improved search relevance.
 
 ### Key Features
 - **Offer Matching**: The app leverages TF-IDF vectorization and cosine similarity to match user queries with relevant offers.

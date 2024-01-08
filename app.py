@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import pandas as pd
 
-app = Flask(__name__, template_folder='templates')  # Change 'template' to 'templates'
+app = Flask(__name__, template_folder='templates')  
 
 # Import your functions and necessary libraries
 from model import get_relevant_offers_df, preprocess_text, tfidf_matrix, offers_df
